@@ -39,3 +39,14 @@ cacheSolve <- function(x, ...) {
   i
         ## Return a matrix that is the inverse of 'x'
 }
+# Test cases
+a<-matrix(c(1,0,4,-6,2,5,0,3,-1,2,3,5,2,1,-2,3), 4, 4 )
+solve(a)
+m<- matrix(c(2,5,1,3),2,2)
+solve(m)
+
+test1<-makeCacheMatrix(a)
+cacheinverse(test1)
+
+test2<-makeCacheMatrix(m)
+cacheinverse(test2)
